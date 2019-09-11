@@ -1,0 +1,16 @@
+<ion-list>
+  <ion-item *ngFor="let produto of produtos">
+    <ion-avatar slot="start">
+      {{ produto.qtde }}
+    </ion-avatar>
+    <ion-label>
+      <small><strong>{{ produto.titulo }}</strong></small> <br>
+
+      <small>
+        {{produto.descricao }}|
+        {{produto.categoria }} |
+        {{produto.preco | currency: 'BRL' }} |
+      </small>
+    </ion-label>
+  </ion-item>
+</ion-list>
